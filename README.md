@@ -26,7 +26,7 @@
 
 <p align="center">
 	<img src="https://github.com/beautifulBoys/beautifulBoys.github.io/blob/master/source/XiaoMi-Shop/images/GIF1.gif" width="350px"/>
-  
+
 	<img src="https://github.com/beautifulBoys/beautifulBoys.github.io/blob/master/source/XiaoMi-Shop/images/GIF3.gif" width="350px"/>
 </p>
 ## 项目组成
@@ -44,14 +44,15 @@
 ## 将要实现功能
 
 1. 首页的轮播图效果
-2. 首页banner图点击链接
-3. 首页登录功能的实现
-4. 首页底部编码实现
-5. 商品详情页头部搜索功能
-6. 详情页大图轮播的功能
-7. 加入购物车动画
-8. 购物车页面及功能
-9. 页面切换动画
+2. header随scroll透明度变化   √
+3. 首页banner图点击链接
+4. 首页登录功能的实现
+5. 首页底部编码实现
+6. 商品详情页头部搜索功能
+7. 详情页大图轮播的功能
+8. 加入购物车动画
+9. 购物车页面及功能
+10. 页面切换动画
 
 ## 项目安装及运行
 
