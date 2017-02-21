@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <div v-show="!searchState" :style="indexStyle" ref="index">
+    <div :style="indexStyle" ref="index">
       <mi-load :load="load"></mi-load>
       <mi-header @searchEvent="searchHandle" :opac="headerOpacity"></mi-header>
       <div v-show="a"><!--模拟loading效果-->

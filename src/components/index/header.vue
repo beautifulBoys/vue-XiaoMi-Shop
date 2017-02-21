@@ -47,7 +47,6 @@
     },
     watch: {
       opac () {
-        console.log('change');
         this.bgOpacSty.opacity = this.opac;
       }
     },
@@ -120,7 +119,6 @@
     font-size: 0;
     position: fixed;
     color: #fff;
-    z-index: 100;
     .main-head {
       .absolute100;
     }
