@@ -1,6 +1,9 @@
 <template>
   <div class="banner-box">
-    <div class="banner-img">
+    <div ref="swipe" class='banner-img'>
+      <!--<div class='swipe-wrap'>-->
+        <!--<img :src="item" v-for="item in bannerTop"/>-->
+      <!--</div>-->
       <img :src="banner.img1"/>
     </div>
     <div class="bottom">
@@ -10,11 +13,25 @@
 
 </template>
 <script>
+  import data from '../../../data';
+  // import Swiper from '../../../lib/swiper.js';
   export default{
     props: ['banner'],
     data () {
-      return {};
+      return {
+        bannerTop: []
+      };
+    },
+    created () {
+      this.bannerTop = data.banner.bannerTop;
     }
+//    mounted () {
+//      var mySwiper = new Swiper('.swiper-container', {
+//        loop: true,
+//        autoplay: 2500
+//      });
+//      console.log(mySwiper);
+//    }
   };
 </script>
 
@@ -34,6 +51,6 @@
         width: 100%;
       }
     }
-
   }
+
 </style>

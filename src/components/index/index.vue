@@ -1,14 +1,13 @@
 <template>
-  <div ref="index" class="app">
-    <mi-load :load="load"></mi-load>
-    <mi-header @searchEvent="searchHandle"></mi-header>
-    <div v-show="!searchState">
-      <div v-if="a"><!--模拟loading效果-->
-        <mi-banner :banner="banner"></mi-banner>
+  <div class="app">
+    <div v-show="!searchState" :style="indexStyle" ref="index">
+      <mi-load :load="load"></mi-load>
+      <mi-header @searchEvent="searchHandle" :opac="headerOpacity"></mi-header>
+      <div v-show="a"><!--模拟loading效果-->
+        <mi-banner :banner="banner" id="bannerImg"></mi-banner>
         <mi-menu :menu="menu"></mi-menu>
         <mi-body :body="body"></mi-body>
       </div>
-
     </div>
   </div>
 </template>
@@ -40,8 +39,13 @@
       me.bannerList = data.banner.bannerTop;
     },
     mounted () {
+      var me = this;
       console.log(util.screenSize());
       this.c_height = 0.711 * util.screenSize().width;
+      var height = util.screenSize().width * 256 / 360;
+      this.$refs.index.onscroll = function () {
+        me.headerOpacity = this.scrollTop / height;
+      };
     },
     data () {
       return {
@@ -55,7 +59,13 @@
         headOpac: '',
         load: false,
         a: false,
-        c_height: 0
+        c_height: 0,
+        indexStyle: {
+          height: util.screenSize().height + 'px',
+          'overflow-y': 'scroll',
+          width: '100%'
+        },
+        headerOpacity: 0
       };
     },
     methods: {
@@ -73,6 +83,9 @@
 <style lang="less" scoped>
   .app {
     background: #fff;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
   }
 
   .banner-img {

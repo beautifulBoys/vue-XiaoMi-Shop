@@ -1,19 +1,22 @@
 <template>
   <div>
     <div :class="{screen: focus}">
-      <div class="top" :class="{'focus': focus}">
-        <div class="left logo" v-show="!focus"></div>
-        <div class="left back" v-show="focus" @click="goBackEvent"></div>
-        <div class="center">
-          <input type="text" :class="{border: focus}" @focus="handleFocus" v-model="inputText"/>
+      <div class="top">
+        <div class="bg" :style="bgOpacSty" v-show="!focus"></div>
+        <div class="bg1" v-show="focus"></div>
+        <div class="main-head">
+          <div class="left logo" v-show="!focus"></div>
+          <div class="left back" v-show="focus" @click="goBackEvent"></div>
+          <div class="center">
+            <input type="text" :class="{border: focus}" @focus="handleFocus" v-model="inputText"/>
+          </div>
+          <div class="right" v-show="!focus">登录</div>
+          <div class="right search" v-show="focus"></div>
         </div>
-        <div class="right" v-show="!focus">登录</div>
-        <div class="right search" v-show="focus"></div>
       </div>
       <div class="main" v-show="focus">
         <div class="title">热门搜索</div>
-        <img
-          src="http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/a425e85fa21ed71c2a8d64fe86f833f9.jpg?width=720&heihgt=200">
+        <img :src="searchImg">
         <ul>
           <li v-for="item in hotWord" @click="inputFillEvent(item)">{{ item }}</li>
         </ul>
@@ -25,13 +28,28 @@
 </template>
 
 <script>
+  import data from '../../../data';
   export default {
+    props: ['opac'],
     data () {
       return {
         focus: false,
         inputText: '',
-        hotWord: ['红米4 超长续航', '小米Note 2', '小米5s', '笔记本', '小米电视3s', '智能电饭煲']
+        hotWord: ['红米4 超长续航', '小米Note 2', '小米5s', '笔记本', '小米电视3s', '智能电饭煲'],
+        bgOpacSty: {
+          opacity: 0
+        },
+        searchImg: ''
       };
+    },
+    created () {
+      this.searchImg = data.searchImg;
+    },
+    watch: {
+      opac () {
+        console.log('change');
+        this.bgOpacSty.opacity = this.opac;
+      }
     },
     methods: {
       handleFocus () {
@@ -59,6 +77,14 @@
     top: 0;
     left: 0;
     overflow: hidden;
+  }
+
+  .absolute100 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .main {
@@ -91,10 +117,21 @@
     font-family: "Microsoft YaHei";
     width: 100%;
     height: 40px;
-    background: #E54839;
     font-size: 0;
     position: fixed;
     color: #fff;
+    z-index: 100;
+    .main-head {
+      .absolute100;
+    }
+    .bg {
+      .absolute100;
+      background: #ff6700;
+    }
+    .bg1 {
+      .absolute100;
+      background: #efefef;
+    }
     &.focus {
       background: #f5f5f5;
       color: #888;

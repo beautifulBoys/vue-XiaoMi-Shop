@@ -1,7 +1,6 @@
 <template>
   <div>
     <div class="base load-once" :class="{remove: !loadState}" v-show="loadStatus"></div><!--初始化load，只有一次-->
-
     <transition name="fade">
       <div class="base load" v-if="load"></div><!--加载等待-->
     </transition>
@@ -33,7 +32,7 @@
     width: 100%;
     height: 100%;
     position: fixed;
-    z-index: 100;
+    z-index: 200;
     display: block;
   }
   .load-once {
