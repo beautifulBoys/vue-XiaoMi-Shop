@@ -7,6 +7,8 @@
         <mi-banner :banner="banner" id="bannerImg"></mi-banner>
         <mi-menu :menu="menu"></mi-menu>
         <mi-body :body="body"></mi-body>
+        <div style="width: 100%;height: 60px;background: #eee;"></div>
+        <mi-footer></mi-footer>
       </div>
     </div>
   </div>
@@ -19,6 +21,7 @@
   import banner from './banner';
   import menu from './menu';
   import body from './body';
+  import footer from './footer';
   import data from '../../../data';
   export default {
     components: {
@@ -26,7 +29,8 @@
       'mi-banner': banner,
       'mi-menu': menu,
       'mi-body': body,
-      'mi-load': load
+      'mi-load': load,
+      'mi-footer': footer
     },
     created () {
       var me = this;
