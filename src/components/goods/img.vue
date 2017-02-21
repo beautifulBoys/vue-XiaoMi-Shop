@@ -4,41 +4,56 @@
       <div class="left hook" @click="goBackEvent"></div>
       <div class="right hook" @click="goodSearchEvent"></div>
     </div>
-    <img :src="img"/>
+
+    <div class="swiper-container" ref="a">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" v-for="item in bannerList"><img :src="item"/></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!--<img :src="img"/>-->
   </div>
 </template>
 <script>
+  import Swiper from '../../../lib/swiper.js';
+  import data from '../../../data.json';
   export default {
-    props: ['img'],
     data () {
-      return {};
+      return {
+        bannerList: []
+      };
     },
     components: {},
+    created () {
+      this.bannerList = data.detail.img;
+    },
     methods: {
       goBackEvent () {
         this.$router.go(-1);
       },
       goodSearchEvent () {
-        this.$router.push({path: '/index', query: { sign: 1 }});
+        this.$router.push({path: '/index', query: {sign: 1}});
       }
+    },
+    mounted () {
+      var mySwiper = new Swiper(this.$refs.a, {
+        loop: true,
+        autoplay: 3000,
+        pagination: '.swiper-pagination',
+        autoplayDisableOnInteraction: false
+      });
+      console.log(mySwiper);
     }
   };
 </script>
 
 <style lang="less" scoped>
+  @import "../../../lib/swiper.css";
+
   .img {
     font-family: "Microsoft YaHei";
     width: 100%;
-    position: relative;
-    height: 0;
-    padding-top: 100%;
-    img {
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
     .control {
       width: 100%;
       height: 30px;
@@ -68,5 +83,26 @@
         }
       }
     }
+  }
+
+  .swiper-container {
+    width: 100%;
+    .swiper-slide {
+      position: relative;
+      height: 0;
+      padding-top: 115%;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+</style>
+<style>
+  .swiper-pagination-bullet-active {
+    background: #ff8b0f;
   }
 </style>

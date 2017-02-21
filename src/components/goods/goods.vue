@@ -1,6 +1,6 @@
 <template>
   <div class="wripper">
-    <mi-img :img="img"></mi-img>
+    <mi-img></mi-img>
     <mi-buyControl :goodsAttr="goodsAttr" ref="control"></mi-buyControl>
     <mi-detail :detailData="detailData"></mi-detail>
     <div class="addCart">
@@ -31,13 +31,11 @@
       'mi-model': model
     },
     created () {
-      this.img = data.detail.img;
       this.detailData = data.detail;
       this.goodsAttr = data.detail.goodsAttr;
     },
     data () {
       return {
-        img: '',
         detailData: [],
         goodsAttr: {},
         searchState: false,

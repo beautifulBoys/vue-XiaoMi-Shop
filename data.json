@@ -202,7 +202,11 @@
     ]
   },
   "detail": {
-    "img": "http://i8.mifile.cn/v1/a1/8264fcff-a5db-6d74-cfc2-aa0ea8d6805a.webp",
+    "img": [
+      "http://i8.mifile.cn/v1/a1/8264fcff-a5db-6d74-cfc2-aa0ea8d6805a.webp",
+      "http://i8.mifile.cn/v1/a1/02437ee9-f6e6-0f81-71b5-61333c1822d4.webp",
+      "http://i8.mifile.cn/v1/a1/754a3bb3-14aa-1dc1-c8f2-fd12a22cd64e.webp"
+    ],
     "detailList": [
       "http://i8.mifile.cn/v1/a1/5700ba33-8b7c-bb14-b6fe-258d6309993d.webp",
       "http://i8.mifile.cn/v1/a1/a43e9125-59b3-6dd2-6d2b-587d5614e2d4.webp",
