@@ -24,6 +24,8 @@
 
 [小米商城 高仿版](http://www.lixin5.top/mi/)
 
+下载体验(下载demo文件夹，双击index.html即可查看)。
+
 <p align="center">
 	<img src="https://github.com/beautifulBoys/beautifulBoys.github.io/blob/master/source/XiaoMi-Shop/images/GIF1.gif" width="350px"/>
 
