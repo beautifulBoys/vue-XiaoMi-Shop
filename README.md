@@ -22,7 +22,7 @@
 
 [小米官方商城（web）](http://m.mi.com/)
 
-[小米商城 高仿版](http://www.lixin5.top/mi/)
+[小米商城 高仿版](https://beautifulboys.github.io/html/mi/)
 
 下载体验(下载demo文件夹，双击index.html即可查看)。
 
