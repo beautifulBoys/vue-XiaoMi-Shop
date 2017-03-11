@@ -27,11 +27,11 @@
 下载体验(下载demo文件夹，双击index.html即可查看)。
 
 <p align="center">
-	<img src="https://github.com/beautifulBoys/beautifulBoys.github.io/blob/master/source/XiaoMi-Shop/images/GIF1.gif" width="350px"/>
+	<img src="https://github.com/beautifulBoys/beautifulBoys.github.io/blob/master/source/XiaoMi-Shop/images/newGIF.gif" width="350px"/>
 
-	<img src="https://github.com/beautifulBoys/beautifulBoys.github.io/blob/master/source/XiaoMi-Shop/images/GIF3.gif" width="350px"/>
+	<img src="https://github.com/beautifulBoys/beautifulBoys.github.io/blob/master/source/XiaoMi-Shop/images/newGIF1.gif" width="350px"/>
   
-	<img src="https://github.com/beautifulBoys/beautifulBoys.github.io/blob/master/source/XiaoMi-Shop/images/gif4.gif" width="350px"/>
+	<img src="https://github.com/beautifulBoys/beautifulBoys.github.io/blob/master/source/XiaoMi-Shop/images/newGIF2.gif" width="350px"/>
   
 </p>
 ## 项目组成
