@@ -28,9 +28,7 @@
 
 <p align="center">
 	<img src="https://github.com/beautifulBoys/beautifulBoys.github.io/blob/master/source/XiaoMi-Shop/images/newGIF.gif" width="350px"/>
-
 	<img src="https://github.com/beautifulBoys/beautifulBoys.github.io/blob/master/source/XiaoMi-Shop/images/newGIF1.gif" width="350px"/>
-  
 	<img src="https://github.com/beautifulBoys/beautifulBoys.github.io/blob/master/source/XiaoMi-Shop/images/newGIF3.gif" width="350px"/>
   
 </p>
