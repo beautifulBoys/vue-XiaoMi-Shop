@@ -9,13 +9,7 @@
     name: 'app',
     components: {
       'mi-index': index
-    },
-    data () {
-      return {};
     }
   };
 </script>
 
-<style lang="less" scoped>
-
-</style>
