@@ -72,10 +72,6 @@
 
 <script>
     export default {
-        name: 'vModel',
-        created: function () {
-            console.log(this.type);
-        },
         props: ['isHeadShow', 'type'],
         data () {
             return {
