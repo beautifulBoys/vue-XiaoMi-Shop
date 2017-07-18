@@ -4,12 +4,5 @@
   </keep-alive>
 </template>
 <script>
-  import index from './components/index/index';
-  export default {
-    name: 'app',
-    components: {
-      'mi-index': index
-    }
-  };
+  export default {};
 </script>
-
