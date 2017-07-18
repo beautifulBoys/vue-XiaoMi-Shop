@@ -18,11 +18,11 @@
   </div>
 </template>
 <script>
-  import img from './img';
-  import buyControl from './buyControl';
-  import detail from './detail';
-  import data from '../../../data';
-  import model from '../model';
+  import img from '../components/goods/img';
+  import buyControl from '../components/goods/buyControl';
+  import detail from '../components/goods/detail';
+  import data from '../../data';
+  import model from '../components/model';
   export default {
     components: {
       'mi-img': img,
@@ -92,13 +92,13 @@
         &.home {
           width: 15%;
           color: #333;
-          background: url("../../images/svg/home.svg") no-repeat center center;
+          background: url("../images/svg/home.svg") no-repeat center center;
           background-size: 25px;
         }
         &.cart {
           width: 15%;
           color: #333;
-          background: url("../../images/svg/cart.svg") no-repeat center center;
+          background: url("../images/svg/cart.svg") no-repeat center center;
           background-size: 25px;
         }
         &.add {
@@ -114,6 +114,9 @@
             display: block;
             margin: 5px auto 0 auto;
             font-size: 16px;
+            &:active {
+              background: #ec4c1a;
+            }
           }
         }
       }

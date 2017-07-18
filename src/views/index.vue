@@ -15,14 +15,14 @@
 </template>
 
 <script>
-  import util from '../../../lib/util';
-  import load from '../loading';
-  import header from './header';
-  import banner from './banner';
-  import menu from './menu';
-  import body from './body';
-  import footer from './footer';
-  import data from '../../../data';
+  import util from '../../lib/util';
+  import load from '../components/loading';
+  import header from '../components/index/header';
+  import banner from '../components/index/banner';
+  import menu from '../components/index/menu';
+  import body from '../components/index/body';
+  import footer from '../components/index/footer';
+  import data from '../../data';
   export default {
     components: {
       'mi-header': header,
