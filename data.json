@@ -20,37 +20,49 @@
         "imgSrc": "https://i8.mifile.cn/v1/a1/03d1e94c-b0ed-9a22-70d7-cc6cbd90ec79.webp?width=360&height=360",
         "title": "红米Note 4 移动定制版",
         "desc": "全金属十核旗舰手机",
-        "price": 1199
+        "price": 1199,
+        "rom": "64G",
+        "color": "樱花粉"
       },
       {
         "imgSrc": "https://i8.mifile.cn/v1/a1/ecb64c5e-9741-1535-dab6-28d47e2b0d10.webp?width=360&height=360",
         "title": "红米4 32G版",
         "desc": "长续航金属千元旗舰手机",
-        "price": 899
+        "price": 899,
+        "rom": "64G",
+        "color": "樱花粉"
       },
       {
         "imgSrc": "https://i8.mifile.cn/v1/a1/97c2e91e-523e-3988-3abc-aacc824f2737.webp?width=360&height=360",
         "title": "小米手环2",
         "desc": "OLED显示屏，触摸操作",
-        "price": 149
+        "price": 149,
+        "rom": "64G",
+        "color": "樱花粉"
       },
       {
         "imgSrc": "https://i8.mifile.cn/v1/a1/6f19ca85-2326-8e80-0ecc-16134c33a89b.webp?width=360&height=360",
         "title": "小米净水器（厨下式）",
         "desc": "健康家庭必备",
-        "price": 1999
+        "price": 1999,
+        "rom": "64G",
+        "color": "樱花粉"
       },
       {
         "imgSrc": "https://i8.mifile.cn/v1/a1/22f1a143-59fc-fc88-ced9-4f6edf5f4f6e.webp?width=360&height=360",
         "title": "米家小白智能摄像头",
         "desc": "360度 全景带夜视",
-        "price": 399
+        "price": 399,
+        "rom": "64G",
+        "color": "樱花粉"
       },
       {
         "imgSrc": "https://i8.mifile.cn/v1/a1/fd88c85e-d74f-1002-61d0-e001fbb02cf6.webp?width=360&height=360",
         "title": "米家恒温电水壶",
         "desc": "一杯水的温度，刚刚好",
-        "price": 199
+        "price": 199,
+        "rom": "64G",
+        "color": "樱花粉"
       }
     ]
   },

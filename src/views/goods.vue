@@ -5,7 +5,7 @@
     <mi-detail :detailData="detailData"></mi-detail>
     <div class="addCart">
       <div class="home"@click="toHomeEvent"></div>
-      <div class="add"><span @click="butEvent">立即购买</span></div>
+      <div class="add"><span @click="butEvent">加入购物车</span></div>
       <div class="cart"@click="addCartEvent"></div>
     </div>
     <mi-model ref="alert" type="alert" @confirmEvent="alertBtnEvent">
@@ -56,7 +56,7 @@
         this.$refs.alert.modelOpen();
       },
       addCartEvent () {
-        console.log('添加到购物车成功');
+        this.$router.replace({path: '/cart'});
       },
       searchHandle (Boolean) {
         if (Boolean) {
