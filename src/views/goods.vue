@@ -1,6 +1,7 @@
 <template>
   <div class="wripper">
     <mi-img></mi-img>
+    
     <mi-buyControl :goodsAttr="goodsAttr" ref="control"></mi-buyControl>
     <mi-detail :detailData="detailData"></mi-detail>
     <div class="addCart">
@@ -8,6 +9,7 @@
       <div class="add"><span @click="butEvent">加入购物车</span></div>
       <div class="cart"@click="addCartEvent"></div>
     </div>
+    
     <mi-model ref="alert" type="alert" @confirmEvent="alertBtnEvent">
       <div slot="alert" class="alert">
         <h5>您选择的产品</h5>
