@@ -25,7 +25,7 @@
 
 [小米官方商城（web）](http://m.mi.com/)
 
-[小米商城 高仿版](https://beautifulboys.github.io/html/mi/)
+[小米商城 高仿版](https://beautifulboys.github.io/phone/mi/)
 
 下载体验(下载demo文件夹，双击index.html即可查看)。
 
